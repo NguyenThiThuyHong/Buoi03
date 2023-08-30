@@ -10,6 +10,7 @@ namespace BTBuoi3
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
