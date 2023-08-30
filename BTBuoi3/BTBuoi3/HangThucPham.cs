@@ -29,11 +29,11 @@ namespace BTBuoi3
             set { DonGia = value; }
         }
 
-        private DateTime NgaySX;
-        public DateTime NgaySX1
+        private string NgaySX;
+        public string NgaySX1
         {
             get { return NgaySX; }
-            set { NgaySX = DateTime.Now; }
+            set { NgaySX = value; }
         }
 
         private string NgayHH;
@@ -48,11 +48,11 @@ namespace BTBuoi3
             MaHang = "MH001";
             TenHang = "May hut bui";
             DonGia = 15000000;
-            NgaySX = DateTime.Now;
+            NgaySX = "1/1/2022";
             NgayHH = "21/12/2023";
         }
 
-        public HangThucPham(string MaHang, string TenHang, double DonGia, DateTime NgaySX, string NgayHH)
+        public HangThucPham(string MaHang, string TenHang, double DonGia, string NgaySX, string NgayHH)
         {
             this.MaHang = MaHang;
             this.TenHang = TenHang;
@@ -64,17 +64,24 @@ namespace BTBuoi3
         public void Nhap(){
             string MaHang, TenHang, NgayHH;
             double DonGia;
-            DateTime NgaySX;
-            Console.WriteLine("Nhap ma hang: ");
-            MaHang = Console.ReadLine();
-            Console.WriteLine("Nhap ten hang: ");
-            TenHang = Console.ReadLine();
-            Console.WriteLine("Nhap don gia: ");
-            DonGia = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Nhap ngay san xuat: ");
-            NgaySX = DateTime.Now;
-            Console.WriteLine("Nhap ngay het han: ");
-            NgayHH = Console.ReadLine();
+            string NgaySX;
+            int n;
+            Console.WriteLine("Nhap so luong: ");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine("Nhap ma hang: ");
+                MaHang = Console.ReadLine();
+                Console.WriteLine("Nhap ten hang: ");
+                TenHang = Console.ReadLine();
+                Console.WriteLine("Nhap don gia: ");
+                DonGia = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Nhap ngay san xuat: ");
+                NgaySX = Console.ReadLine();
+                Console.WriteLine("Nhap ngay het han: ");
+                NgayHH = Console.ReadLine();
+            }
+                
         }
 
 

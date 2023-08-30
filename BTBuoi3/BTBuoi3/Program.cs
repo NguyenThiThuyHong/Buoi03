@@ -10,7 +10,9 @@ namespace BTBuoi3
     {
         static void Main(string[] args)
         {
-
+            HangThucPham a = new HangThucPham();
+            a.Nhap();
+            Console.ReadKey();
         }
     }
 }
