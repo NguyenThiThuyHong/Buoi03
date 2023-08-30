@@ -12,6 +12,7 @@ namespace BTBuoi3
         {
             HangThucPham a = new HangThucPham();
             a.Nhap();
+            a.Xuat();
             Console.ReadKey();
         }
     }

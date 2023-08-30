@@ -70,20 +70,26 @@ namespace BTBuoi3
             n = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < n; i++)
             {
-                Console.WriteLine("Nhap ma hang: ");
+                Console.Write("Nhap ma hang: ");
                 MaHang = Console.ReadLine();
-                Console.WriteLine("Nhap ten hang: ");
+                Console.Write("Nhap ten hang: ");
                 TenHang = Console.ReadLine();
-                Console.WriteLine("Nhap don gia: ");
+                Console.Write("Nhap don gia: ");
                 DonGia = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Nhap ngay san xuat: ");
+                Console.Write("Nhap ngay san xuat: ");
                 NgaySX = Console.ReadLine();
-                Console.WriteLine("Nhap ngay het han: ");
+                Console.Write("Nhap ngay het han: ");
                 NgayHH = Console.ReadLine();
             }
                 
         }
 
+        public void Xuat()
+        {
+            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("Ma_Hang  Ten_Hang      Don_Gia    Ngay_San_Xuat  Ngay_Het_Han  Ghi_Chu");
+            Console.WriteLine("{0}  {1}    {2}    {3}       {4}",MaHang1, TenHang1, DonGia1, NgaySX1, NgayHH1);
+        }
 
     }
 }
